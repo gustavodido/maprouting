@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/global.css">
+</head>
+
+<body>
+    <div id="header">
+        <img src="/static/gap.png" class="imgSize" />
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="exampleInputEmail2">ID:</label>
+                <input type="text" class="form-control" id="dcIds" placeholder="6331,7801,1234">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputName2">Store Type:</label>
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-default active">
+                        <input type="radio" name="options" id="all" value="" autocomplete="off" checked> All
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" name="options" id="warehouses" value="W" autocomplete="off"> Warehouses
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" name="options" id="stores" value="S" autocomplete="off"> Stores
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail2">From:</label>
+                <input type="date" class="form-control" id="fromDate" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail2">To:</label>
+                <input type="date" class="form-control" id="toDate" placeholder="">
+            </div>
+            <button type="submit" class="btn btn-primary">&nbsp;&nbsp;Apply&nbsp;&nbsp;</button>
+        </form>
+    </div>
+    <div id="googleMap"></div>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="static/data.js"></script>
+    <script src="static/global.js"></script>
+</body>
+
+</html>
